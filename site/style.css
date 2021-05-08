@@ -1,63 +1,89 @@
-h1 {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-style: italic;
-  font-family: 'William', serif;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 34px;
-  font-weight: normal;
-  color: white;
-}
-
-h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-  font-style: italic;
-  font-family: 'Inter', sans-serif;
-  margin-top: 0;
-  margin-bottom: 24px;
-  color: white;
-}
-
-h3 {
-  font-family: 'William', serif;
+body, h1, h2, h3, h4, p, a {
   margin: 0;
-  font-size: 15px;
-  text-transform: uppercase;
-  line-height: 18px;
+  font-size: 100%;
   font-weight: normal;
-  color: white;
 }
 
-img {
-  width: 500px;
-  margin-bottom: 50px;
+* {
+  box-sizing: border-box;
 }
 
-p {
-  font-family: 'Inter', sans-serif;
-  text-align: center;
-}
-
-div {
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
   background-image: linear-gradient(120deg, #0FF 0%, #F0F 100%);
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  text-align: center;
-  margin: auto;
 }
 
-header {
-  background-color: rgba(0, 0, 0, 0.5);
+.header {
+  height: 100vh;
+  background-color: #eee;
+  background-image: url(https://media.discordapp.net/attachments/832258779873542144/840595849213902938/gr.png);
+  background-size: cover;
   background-position: center;
   text-align: center;
 }
 
-button {
-  background-image: linear-gradient(120deg, #000 0%, #FFF 100%);
-  color: black;
-  width: 100px;
-  height: 50px;
+.header-title {
+  font-size: 140px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: auto;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+}
+
+.content {
+  font-size: 0;
+  width: 790px;
+  margin: 100px auto 50px;
+}
+
+.card {
+  margin-bottom: 60px;
+  padding: 45px 45px 70px;
+  display: inline-block;
+  margin-right: 90;
+  box-shadow: 4px 4px 5px rgba(250, 50, 50, .4);
+  background-color: black;
+  border-radius: 40px;
+}
+
+.no-right-margin {
+  margin-right: 0;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card-text {
+  font-size: 16px;
+  color: white;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.footer {
+  height: 300px;
+  background-color: #000;
+  display: flex;
+}
+
+.footer-author {
+  color: white;
+  font-size: 24px;
+  margin: auto;
 }
