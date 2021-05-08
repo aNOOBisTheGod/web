@@ -58,14 +58,15 @@ body {
 }
 
 .card-title {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 500;
   margin-bottom: 10px;
   color: white;
+  font-weight: bold;
 }
 
 .card-text {
-  font-size: 16px;
+  font-size: 24px;
   color: white;
 }
 
