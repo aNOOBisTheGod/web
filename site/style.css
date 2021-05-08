@@ -87,3 +87,7 @@ body {
   font-size: 24px;
   margin: auto;
 }
+
+.card:hover {
+  opacity: 0.5;
+}
