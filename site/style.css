@@ -5,6 +5,7 @@
 }
 
 body, h1, h2, h3, h4, p, a {
+  margin: 0;
   font-size: 100%;
   font-weight: normal;
 }
@@ -85,9 +86,9 @@ body {
 
 .footer {
   height: 500px;
-  width: 100%;
   background-color: #000;
-  padding-top: 20vh;
+  display: flex;
+  padding-top: 10vh;
 }
 
 .footer-author {
@@ -102,7 +103,8 @@ body {
 }
 
 ul {
-  margin-left: 30%;
+  margin-left: 40%;
+  margin-bottom: 100px;
   display: flex;
   transform: skew(25deg);
   transform-style: preserve-3d;
@@ -112,7 +114,7 @@ ul li {
   list-style: none;
   width: 60px;
   height: 60px;
-  margin: 0px 30px;
+  margin: 0px 20px;
 }
 ul li:before{
   content: '';
@@ -190,7 +192,4 @@ ul li:nth-child(4):hover span{
 
 ul li:nth-child(5):hover span{
   background: #ff6b11 !important;
-}
-body {
-overflow-x: hidden;
 }
