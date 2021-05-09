@@ -87,7 +87,6 @@ body {
 .footer {
   height: 500px;
   background-color: #000;
-  display: flex;
   padding-top: 5%;
 }
 
@@ -95,7 +94,6 @@ body {
   color: white;
   font-size: 24px;
   margin: auto;
-  margin-bottom: 100%;
 }
 
 .card:hover {
@@ -104,8 +102,7 @@ body {
 }
 
 ul {
-  margin-left: 40%;
-  margin-bottom: 100px;
+  margin-left: 35%;
   display: flex;
   transform: rotate(-25deg) skew(25deg);
   transform-style: preserve-3d;
