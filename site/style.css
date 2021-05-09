@@ -91,7 +91,7 @@ body {
   padding-top: 10vh;
 }
 
-.footer-author {
+.footer-text {
   color: white;
   font-size: 24px;
   margin: auto;
@@ -103,7 +103,7 @@ body {
 }
 
 ul {
-  margin-left: 40vw;
+  margin-left: 10vw;
   margin-bottom: 100px;
   display: flex;
   transform: skew(25deg);
@@ -114,7 +114,7 @@ ul li {
   list-style: none;
   width: 60px;
   height: 60px;
-  margin: 0px 20px;
+  margin: 0px 30px;
 }
 ul li:before{
   content: '';
