@@ -58,6 +58,7 @@ body {
   box-shadow: 4px 4px 5px rgba(0, 0, 0, .4);
   background-color: black;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 .no-right-margin {
@@ -99,7 +100,7 @@ body {
 
 .card:hover {
   opacity: 0.6;
-  transition: 0.5s;
+  transition: opacity 0.3s;
 }
 
 ul {
