@@ -1,51 +1,77 @@
-@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
-* {
-  padding: 0px;
-  margin: 0px;
-}
-
-body, h1, h2, h3, h4, p, a {
-  margin: 0;
-  font-size: 100%;
+@font-face {
+  src: url(https://code.s3.yandex.net/web-code/fonts/SuisseIntl-Book.woff);
+  font-family: 'Suisse';
   font-weight: normal;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  src: url(https://code.s3.yandex.net/web-code/fonts/SuisseIntl-Bold.woff
+);
+  font-family: 'Suisse';
+  font-weight: bold;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  background-image: linear-gradient(120deg, #0FF 0%, #F0F 100%);
+  background-color: #323131;
+  color: white;
+  position: relative;
+  max-width: 540px;
+  min-height: 100%;
+  font-family: 'Suisse';
+  box-sizing: border-box;
+  padding: 36px;
 }
 
 .header {
-  height: 100vh;
-  background-color: #eee;
-  background-image: url(https://media.discordapp.net/attachments/832258779873542144/840595849213902938/gr.png);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-}
-
-.header-title {
-  font-size: 140px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin: auto;
-}
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .5);
   display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+
+.button {
+  width: 130px;
+  height: 40px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+.image {
+  width: 80%;
+  display: block;
+  margin: 60px auto 50px;
+}
+
+.advice {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin-bottom: 70px;
 }
 
 .content {
   font-size: 0;
-  width: 790px;
+  width: 100vh;
   margin: 100px auto 50px;
 }
 
@@ -58,19 +84,6 @@ body {
   box-shadow: 4px 4px 5px rgba(0, 0, 0, .4);
   background-color: black;
   border-radius: 40px;
-  cursor: pointer;
-}
-
-.no-right-margin {
-  margin-right: 0;
-}
-
-.card-title {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  color: white;
-  font-weight: bold;
 }
 
 .card-text {
@@ -81,116 +94,20 @@ body {
 .card-image {
   width: 100%;
   height: 100%;
-  padding: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 5%;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
 }
 
 .footer {
-  height: 500px;
-  background-color: #000;
-  display: flex;
-  padding-top: 10vh;
-}
-
-.footer-text {
-  color: white;
-  font-size: 24px;
-  margin: auto;
-}
-
-.card:hover {
-  opacity: 0.6;
-  transition: opacity 0.3s;
-}
-
-ul {
-  margin-left: 10vw;
-  margin-bottom: 100px;
-  display: flex;
-  transform: skew(25deg);
-  transform-style: preserve-3d;
-}
-ul li {
-  position: relative;
-  list-style: none;
-  width: 60px;
-  height: 60px;
-  margin: 0px 30px;
-}
-ul li:before{
-  content: '';
+  font-size: 16px;
+  margin: 0;
   position: absolute;
-  bottom: -10px;
-  left: -5px;
-  width: 100%;
-  height: 10px;
-  background: #2a2a2a;
-  trnasform-origin: top;
-  transform: skewX(-41deg);
-}
-ul li:after{
-  content: '';
-  position: absolute;
-  top:5px;
-  left: -9px;
-  width: 9px;
-  height: 100%;
-  background: #2a2a2a;
-  trnasform-origin: right;
-  transform: skewY(-49deg);
-}
-ul li span{
-  position: absolute;
-  top: 0;
-  lef: 0;
-  width: 100%;
-  height: 100%;
-  display: flex !important;
-  background: #2a2a2a;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 30px !important;
-  transition: 1.5s ease-out;
-}
-ul li:hover span {
-  z-index: 1000;
-  transition: .3s;
-  color: #fff;
-  box-shadw: -1px 1px 1px rgba(0, 0, 0, .5);
-}
-ul li:hover span:nth-child(5){
-  transform: translate(40px, -40px);
-  opacity: 1;
-}
-ul li:hover span:nth-child(4){
-  transform: translate(30px, -30px);
-  opacity: .8;
-}
-ul li:hover span:nth-child(3){
-  transform: translate(20px, -20px);
-  opacity: .6;
-}
-ul li:hover span:nth-child(2){
-  transform: translate(10px, -10px);
-  opacity: .4;
-}ul li:hover span:nth-child(1){
-  transform: translate(0px, 0px);
-  opacity: .2;
-}
-ul li:nth-child(1):hover span{
-  background: #1781ff !important;
-}
-ul li:nth-child(2):hover span{
-  background: #2C3456 !important;
-}
-ul li:nth-child(3):hover span{
-  background: #EA6E96 !important;
-}
-ul li:nth-child(4):hover span{
-  background: #5dafff !important;
-}
-
-ul li:nth-child(5):hover span{
-  background: #ff6b11 !important;
+  bottom: 36px;
 }
