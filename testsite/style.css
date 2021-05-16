@@ -126,6 +126,7 @@ body {
     box-shadow: 4px 4px 5px rgba(0, 0, 0, .4)
 }
 
+
 .glow-on-hover:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -172,5 +173,6 @@ body {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
 
 
